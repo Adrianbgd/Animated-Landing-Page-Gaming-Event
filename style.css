@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    height: 100vh;
+    background-color: #222222; 
+    overflow: hidden;
+}
+
+h3 {
+    margin-left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h3:hover {
+    color:#1cc54f;
+    transition: .7s all;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(236, 236, 236);
+    padding: 10px 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #23d458;
+}
+
+nav h5 {
+    margin-left: 100px;
+}
+
+nav p {
+    display: inline; 
+    margin-top: 2px;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav .second_p {
+    margin-right: 100px;
+    font-weight: bold;
+    margin-right: 70px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#23d458;
+    transform: skewX(-10deg);
+    left: -110%;
+}
+
+.esports {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 190px;
+    margin-bottom: 100px;
+}
+
+.background {
+    height: 400px;
+    width: 350px;
+    z-index: 1;
+    background: #1cc54f;
+    margin-right: 45%;
+    border-radius: 5px;
+}
+
+.photo {
+    position: absolute;
+    height: 450px;
+    z-index: 3;
+    right: -100%;
+    top: -5%;
+
+}
+
+.name {
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 46px;
+    top: 2%;
+    left: -28%;
+    margin-left: 5%;
+}
+
+.name span {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 58px;
+}
+
+.details{
+    position: absolute;
+    background: white;
+    z-index: 4;
+    padding: 18px 50px;
+    padding-right: 54px;
+    font-weight: bold;
+    top: 340px;
+    right: 285px;
+    transform-origin: top left;
+    border-radius: 5px;
+    height: 12px;
+    width: 40px;
+}
+
+.details a {
+    transition: .7s all;
+    cursor: pointer;
+}
+
+h4 {
+    margin-top: 100px;
+    color: rgb(182, 182, 182);
+}
+
+.details:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.details::after {
+    content: '';
+    width: 100%;
+    display: block;
+    background: #222222;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .7s all;
+    border-radius: 5px;
+}
+
+.details:hover::after {
+    height: 100%;
+}
+
+nav h5:hover {
+    transition: .7s all;
+    color:#1cc54f;
+    cursor: pointer;
+}
+
+nav p:hover {
+    transition: .7s all;
+    color:#1cc54f;
+    cursor: pointer;
+}
+
+.container2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: #f1f1f1;
+}
+
+.main_content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event_details {
+    color: #222222;
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding-top: 70px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #222222;
+}
+
+.esports-image {
+    padding-right: 100px;
+    padding-top: 50px;
+    height: 600px;
+    width: 800px;
+}
+
+.class_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.class_content .esports-description {
+    color: #222222;
+    max-width: 600px;
+    max-height: 600px;
+    padding-right: 150px;
+    padding-top: 45px;
+    font-size: 1.2em;
+}
+
+@media only screen and  (max-width: 600px) {
+    .background {
+        height: 400px;
+        width: 300px;
+        z-index: 1;
+        background: #1cc54f;
+        margin-right: 45%;
+        border-radius: 5px;
+    }
+
+    .photo {
+        height: 400px;
+        right: -117%;
+        top: 2%;
+    }
+
+    .details {
+        position: absolute;
+        background: white;
+        z-index: 4;
+        padding: 18px 50px;
+        padding-right: 54px;
+        font-weight: bold;
+        top: 340px;
+        right: 221px;
+        transform-origin: top left;
+        border-radius: 5px;
+        height: 12px;
+        width: 40px;
+    }
+
+    .esports {
+        height: 60vh;
+
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: rgb(236, 236, 236);
+        padding: 10px 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #23d458;
+    }
+
+    h3 {
+        padding-right: 24px;
+    }
+    
+}
+
+
+
+
