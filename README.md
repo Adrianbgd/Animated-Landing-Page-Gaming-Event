@@ -1,2 +1,2 @@
 # Landing-Page-Gaming-Event
-Animated landing page for a gaming event.
+https://adrianbgd.github.io/Animated-Landing-Page-Gaming-Event/
